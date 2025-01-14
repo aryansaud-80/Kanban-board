@@ -51,3 +51,6 @@ This is a Kanban-style task management application built using React. The app al
 - Add more task details (e.g., description, due date).
 - Implement task editing functionality.
 - Improve UI/UX with more interactive features.
+
+## Demo
+You can try the demo of the kanban -style task manager at: https://kanban-board-beige-three.vercel.app/
