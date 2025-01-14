@@ -21,11 +21,7 @@ const CreateTask: React.FC = () => {
       return toast.error('Task title must be at least 4 characters long');
     if (task.title.length >= 100)
       return toast.error('Task title must be less than 100 characters long');
-    if (
-      tasks.some(
-        (t) => t.title.toLowerCase() === task.title.toLowerCase()
-      )
-    )
+    if (tasks.some((t) => t.title.toLowerCase() === task.title.toLowerCase()))
       return toast.error('Task title must be unique');
 
     const updatedTask = [...tasks, task];
@@ -43,10 +39,10 @@ const CreateTask: React.FC = () => {
   return (
     <div className='flex flex-col gap-4'>
       <form
-        className='flex flex-col items-center justify-center w-full gap-4'
+        className='flex flex-col items-center justify-center w-full gap-4 '
         onSubmit={handleCreateTodo}
       >
-        <div className='flex gap-4'>
+        <div className='flex gap-4 max-sm:flex-col'>
           <input
             type='text'
             className='h-12 px-1 border-2 rounded-md outline-none w-80 border-slate-300 bg-slate-200'
