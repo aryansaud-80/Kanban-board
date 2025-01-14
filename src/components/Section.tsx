@@ -44,7 +44,7 @@ const Section: React.FC<SectionProps> = ({ status }) => {
   return (
     <div
       ref={dropTask}
-      className='w-80 border-2 border-slate-300 rounded-md p-4 h-[400px] max-h-[400px] overflow-y-auto relative shadow-lg cursor-grab'
+      className='w-80 border-2 border-slate-300 rounded-md p-4 h-[400px] max-h-[400px] overflow-y-auto relative shadow-lg '
     >
       <Header text={status} bg={bg} count={tasksInSection.length} />
       {tasksInSection.map((task) => (

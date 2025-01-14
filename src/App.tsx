@@ -8,7 +8,8 @@ const App: React.FC = () => {
   return (
     <DndProvider backend={HTML5Backend}>
       <Toaster position='top-right' reverseOrder={false} />
-      <div className='flex flex-col items-center w-full h-screen p-40 pt-20 bg-slate-100 text-slate-900 '>
+      <div className='flex flex-col items-center w-full h-screen pt-5 bg-slate-100 text-slate-900'>
+        <h1 className='mb-10 text-4xl'>Kanban - Style Task Manager</h1>
         <CreateTask />
         <ListTasks />
       </div>
